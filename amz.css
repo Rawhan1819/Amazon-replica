@@ -1,0 +1,406 @@
+body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background-color: #eaeded; 
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            color: #111; 
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            -ms-overflow-style: none;  
+            scrollbar-width: none; 
+        }
+
+        .container {
+            max-width: 1500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .header {
+            background-color: #232f3e; 
+            color: white;
+            padding: 0.5rem 1rem; 
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.875rem;
+            position: relative;
+            z-index: 20;
+        }
+
+        .header-left,
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem; 
+        }
+
+        .header-link {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem; 
+            color: #d1d5db; 
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .header-link:hover {
+            color: white;
+        }
+
+        .amazon-logo {
+            height: 50px; 
+        }
+
+        .amazon-logo-text {
+            font-weight: bold;
+            font-size: 1.125rem; 
+        }
+
+        .location-icon {
+            height: 1.25rem; 
+            width: 1.25rem; 
+        }
+
+        .location-text {
+            font-size: 0.75rem; 
+        }
+
+        .location-bold {
+            font-weight: bold;
+        }
+
+        .search-bar-container {
+            flex-grow: 1;
+            margin: 0 1rem; 
+            max-width: 64rem; 
+        }
+
+        .search-bar-flex {
+            display: flex;
+        }
+
+        .search-dropdown {
+            background-color: #e5e7eb; 
+            color: #4b5563;
+            border-top-left-radius: 0.375rem; 
+            border-bottom-left-radius: 0.375rem; 
+            padding: 0 0.75rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            border: 1px solid #ccc; 
+            border-right: none;
+            height: 40px;
+        }
+
+        .search-dropdown:hover {
+            background-color: #d1d5db; 
+        }
+
+        .search-dropdown-icon {
+            height: 1rem;
+            width: 1rem; 
+            margin-left: 0.25rem;
+        }
+
+        .search-input-custom {
+            flex-grow: 1;
+            padding: 0.5rem 1rem; 
+            outline: none;
+            color: black;
+            border-top-right-radius: 0.375rem; 
+            border-bottom-right-radius: 0.375rem; 
+            height: 40px; 
+            border: 1px solid #ccc; 
+            border-left: none; 
+        }
+
+        .search-button-custom {
+            background-color: #fcd34d;
+            color: #1f2937; 
+            padding: 0 1rem; 
+            border-top-right-radius: 0.375rem; 
+            border-bottom-right-radius: 0.375rem; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+            border: none;
+            height: 40px; 
+        }
+
+        .search-button-custom:hover {
+            background-color: #fbbf24; 
+        }
+
+        .search-icon {
+            height: 1.5rem; 
+            width: 1.5rem; 
+        }
+
+        .language-img {
+            height: 1rem; 
+        }
+
+        .account-bold {
+            font-weight: bold;
+        }
+
+        .cart-icon {
+            height: 1.75rem; 
+            width: 1.75rem; 
+        }
+
+        .cart-text {
+            font-weight: bold;
+            font-size: 1.125rem; 
+            margin-left: 0.25rem; 
+        }
+
+        .navbar {
+            background-color: #232f3e; 
+            color: white;
+            padding: 0.5rem 1rem; 
+            display: flex;
+            align-items: center;
+            gap: 1rem; 
+            font-size: 0.875rem; 
+            position: relative;
+            z-index: 10;
+            overflow-x: auto; 
+            white-space: nowrap;
+        }
+
+        .navbar-link {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem; 
+            text-decoration: none;
+            color: white;
+            padding: 0.25rem 0.5rem; 
+            border: 1px solid transparent;
+            border-radius: 0.25rem; 
+            transition: border-color 0.2s ease-in-out;
+        }
+
+        .navbar-link:hover {
+            border-color: white;
+        }
+
+        .navbar-icon {
+            height: 1.25rem; 
+            width: 1.25rem; 
+        }
+
+        /* Main Banner Section */
+        .main-banner {
+            background-image: url('https://eyeondesign.aiga.org/wp-content/uploads/2016/03/Header-Superman-the-Movie-promo.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 600px; 
+            position: relative;
+            margin-top: -80px;
+            z-index: 0;
+        }
+
+        .banner-gradient-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 200px; 
+            background: linear-gradient(to bottom, transparent, #eaeded); 
+        }
+
+        .content-grid-container {
+            margin-top: -300px; 
+            position: relative;
+            z-index: 10; 
+            padding-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            gap: 1rem; 
+            grid-template-columns: 1fr; 
+        }
+
+        @media (min-width: 640px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        .content-card {
+            background-color: white;
+            padding: 1.25rem; 
+            border-radius: 0.5rem; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .card-title {
+            font-size: 1.25rem; 
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 150px; 
+            object-fit: contain; 
+            margin-bottom: 0.625rem; 
+        }
+
+        .shop-now-link {
+            color: #007185;
+            font-size: 0.8125rem;
+            margin-top: 0.9375rem;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .shop-now-link:hover {
+            color: #c7511f;
+            text-decoration: underline;
+        }
+
+        .amazon-business-card {
+            background-color: white;
+            padding: 1.25rem; 
+            border-radius: 0.5rem; 
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            height: 100%;
+            text-align: center;
+        }
+
+        .amazon-business-logo {
+            width: 150px; 
+            height: auto;
+            margin-top: 0.9375rem;
+        }
+
+        .product-card-rating .product-image {
+            height: 200px; 
+        }
+        .stars {
+            color: #FFA41C; 
+            font-size: 0.875rem; 
+        }
+
+        .price-text {
+            font-size: 1.125rem; 
+            font-weight: bold;
+            color: #111; 
+        }
+
+        .price-decimal {
+            font-size: 0.875rem;
+        }
+
+        .original-price {
+            font-size: 0.875rem; 
+            color: #6b7280; 
+            text-decoration: line-through;
+        }
+
+        .product-info-text {
+            font-size: 0.875rem;
+            color: #4b5563; 
+            margin-bottom: 0.25rem;
+        }
+
+        .view-count {
+            font-size: 0.75rem; 
+            color: #6b7280; 
+        }
+
+        .blue-link-small {
+            font-size: 0.75rem; 
+            color: #2563eb;
+            margin-left: 0.25rem; 
+        }
+
+        .card-multi-image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem; 
+        }
+
+        .card-multi-image-item {
+            text-align: left;
+        }
+
+        .card-multi-image-item .product-image {
+            height: 100px; 
+        }
+
+        .back-to-top {
+            background-color: #232f3e; 
+            color: white;
+            text-align: center;
+            padding: 1rem 0; 
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        .back-to-top:hover {
+            background-color: #374151; 
+        }
+
+        .back-to-top a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.875rem; 
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #131a22; 
+            color: white;
+            text-align: center;
+            padding: 2rem 0; 
+            font-size: 0.75rem; 
+        }
+
+        .footer-links {
+            margin-top: 0.5rem; 
+            display: flex;
+            justify-content: center;
+            gap: 1rem; 
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: text-decoration 0.2s ease-in-out;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
